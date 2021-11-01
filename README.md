@@ -42,4 +42,5 @@ Sarah Hollingsworth
 * [Github](https://github.com/sahhollingsworth)
 * [LinkedIn](https://www.linkedin.com/in/sarahhollingsworth/)
 
-## Acknowledgements - WIP
+## Acknowledgements -
+* Blogpost and Comment seed data taken from [AskReddit](https://www.reddit.com/r/AskReddit/)

@@ -30,7 +30,7 @@ Blogpost.init (
             allowNull: false,
         },
         content: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(700),
             allowNull: false,
         },
     },

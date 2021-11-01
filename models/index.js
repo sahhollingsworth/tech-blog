@@ -9,7 +9,7 @@ User.hasMany(Blogpost, {
 });
 
 // A Blogpost has one User who created it
-Post.belongsTo(User, {
+Blogpost.belongsTo(User, {
     foreignKey:'user_id'
 });
 

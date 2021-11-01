@@ -1,0 +1,52 @@
+[
+    {
+        "user_id": 1,
+        "blogpost_id": 1,
+        "content": "This is an oxymoron"
+    },
+    {
+        "user_id": 2,
+        "blogpost_id": 1,
+        "content": "You're a moron."
+    },
+    {
+        "user_id": 4,
+        "blogpost_id": 1,
+        "content": "nice"
+    },
+    {
+        "user_id": 3,
+        "blogpost_id": 1,
+        "content": "nice"
+    },
+    {
+        "user_id": 6,
+        "blogpost_id": 3,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+    },
+    {
+        "user_id": 6,
+        "blogpost_id": 4,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+    },
+    {
+        "user_id": 7,
+        "blogpost_id": 5,
+        "content": "Morbi convallis lectus eros."
+    },
+    {
+        "user_id": 8,
+        "blogpost_id": 6,
+        "content": "Nunc rhoncus rhoncus nibh, quis ornare magna congue id."
+    },
+    {
+        "user_id": 9,
+        "blogpost_id": 7,
+        "content": "Curabitur dictum rhoncus velit, a vulputate mi malesuada et."
+    },
+    {
+        "user_id": 10,
+        "blogpost_id": 8,
+        "content": "Donec malesuada, libero ac aliquet hendrerit, est nibh pharetra justo, eget faucibus enim lectus a nunc."
+    }
+]
