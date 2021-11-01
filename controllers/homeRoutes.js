@@ -33,6 +33,9 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Block user in log out state from accessing Dashboards
+// ??
+
 // Render the dashboard with all blogpost by a given user id
 router.get('/dashboard', userAuth, async (req, res) => {
     try {
@@ -42,7 +45,15 @@ router.get('/dashboard', userAuth, async (req, res) => {
     }
 });
 
-// Block user in log out state from accessing Dashboards
+// Render the signup view for user to login
+router.get('/signup', (req, res) => {
+    // if user is already logged in, redirect them to the Dashboard page
+    if(req.session.logged_in) {
+        res.redirect('/dashboard');
+        return;
+    }
+    res.render('signup');
+});
 
 
 // Render the login view for user to login
