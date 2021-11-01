@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
             ],
             order: [
                 ['date_created', 'DESC'],
-            ],
+            ]
         });
         // Serialize blogpostData for template to read
         const blogposts = blogpostData.map((blogpost) => blogpost.get({ plain: true }));
@@ -39,7 +39,26 @@ router.get('/', async (req, res) => {
 // Render the dashboard with all blogpost by a given user id
 router.get('/dashboard', userAuth, async (req, res) => {
     try {
-        // logic for dashboard page contents
+        const blogpostData = await Blogpost.findAll({
+            //For each Blogpost record, return the username attribute for any associated User record
+            where: {
+                user_id: req.session.user_id,
+            },
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                }
+            ],
+            order: [
+                ['date_created', 'DESC'],
+            ]
+        });
+        const blogposts = blogpostData.map((blogpost) => blogpost.get({ plain: true }));
+        res.render('dashboard', {
+            blogposts,
+            logged_in: true
+        });
     } catch (err) {
         res.status(500).json(err);
     }
