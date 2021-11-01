@@ -24,8 +24,6 @@ router.get('/dashboard', userAuth, async (req, res) => {
     }
 });
 
-
-
 // Render the login view for user to login
 router.get('/login', (req, res) => {
     // if user is already logged in, redirect them to the Dashboard page
