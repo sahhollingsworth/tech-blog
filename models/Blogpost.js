@@ -33,6 +33,11 @@ Blogpost.init (
             type: DataTypes.STRING(700),
             allowNull: false,
         },
+        date_created: {
+            type: DataTypes.DATEONLY,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
+        },
     },
     {
         sequelize,
