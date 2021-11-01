@@ -1,9 +1,12 @@
+// import relevant parts of sequelize package
 const { Model, DataTypes } = require('sequelize');
+// import database connection from configs
 const sequelize = require('../config/connection');
 
 // Define Blogpost model, any extends 
 // userAuth if auth needed
 
+// Initialize Blogpost model by extending off Sequelize's Model class
 class Blogpost extends Model {}
 
 Blogpost.init (

@@ -1,6 +1,9 @@
+// import relevant parts of sequelize package
 const { Model, DataTypes } = require('sequelize');
+// import database connection from configs
 const sequelize = require('../config/connection');
 
+// Initialize Comment model by extending off Sequelize's Model class
 class Comment extends Model {}
 
 Comment.init (

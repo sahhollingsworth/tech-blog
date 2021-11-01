@@ -1,8 +1,10 @@
+// import relevant parts of sequelize package
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
+// import database connection from configs
 const sequelize = require('../config/connection');
 
-// Define User model, any extends
+// Initialize User model by extending off Sequelize's Model class
 class User extends Model {
     //something with authentication here
     // userAuth if auth needed
@@ -45,7 +47,7 @@ User.init (
                 newUserData.password = await bcrypt.hash(newUserData.password, 10);
                 return newUserData;
             },
-            // Future dev - If change password is supported
+            // Future dev - If change password is supported, needs UI
             // beforeUpdate: async (updatedUserData) => {
             //     updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
             //     return updatedUserData;
