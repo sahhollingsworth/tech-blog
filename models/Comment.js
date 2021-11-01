@@ -4,10 +4,10 @@ const sequelize = require('../config/connection');
 // Define Blogpost model, any extends 
 // userAuth if auth needed
 
-class Blogpost extends Model {}
+class Comment extends Model {}
 
-Blogpost init (
+Comment init (
 
 );
 
-module.exports = Blogpost;
+module.exports = Comment;
